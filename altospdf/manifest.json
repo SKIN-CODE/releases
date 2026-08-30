@@ -1,0 +1,9 @@
+{
+  "app": "altospdf",
+  "version": "1.0.0",
+  "url": "https://github.com/SKIN-CODE/releases/releases/download/altospdf-v1.0.0/altosPDF.exe",
+  "size": 68921837,
+  "sha256": "8940A75A5B29E4BE2E6E90E26D13E775F258AEF3B1453C89492B896CF7A13B3B",
+  "released": "2026-08-31",
+  "notes": "altosPDF 첫 배포판. 문서 보기, 페이지 재구성, 형광펜과 글자 수정을 한 흐름으로 제공합니다."
+}
