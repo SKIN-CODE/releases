@@ -1,9 +1,9 @@
 {
   "app": "altospdf",
-  "version": "1.5.2",
-  "url": "https://github.com/SKIN-CODE/releases/releases/download/altospdf-v1.5.2/altosPDF.exe",
-  "size": 68910286,
-  "sha256": "363D09AC1A66646DEC7860D3EBF1A40F1D39D4028FC3F45C51D620EDABC3806F",
+  "version": "1.5.3",
+  "url": "https://github.com/SKIN-CODE/releases/releases/download/altospdf-v1.5.3/altosPDF.exe",
+  "size": 68910822,
+  "sha256": "496F40F6A3D53A14760B31B9FB45E7E8BCD6FC371C0430D095C9F9AC3D6F8859",
   "released": "2026-09-09",
-  "notes": "업데이트 다운로드 후 파일 잠금 오류 수정. 시작 시 다운로드 및 적용/취소 팝업, 진행률과 취소, 적용 후 자동 재시작. 미저장 PDF 작업 보호."
+  "notes": "PC 글꼴 풀다운 선택이 바깥 클릭 확정으로 가로막히던 회귀 수정. 글꼴 목록 가상화 및 표시 대기 개선. 속성창과 글꼴 목록에서도 Esc로 입력 취소."
 }
