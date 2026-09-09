@@ -1,9 +1,9 @@
 {
   "app": "altospdf",
-  "version": "1.5.1",
-  "url": "https://github.com/SKIN-CODE/releases/releases/download/altospdf-v1.5.1/altosPDF.exe",
-  "size": 68902963,
-  "sha256": "7676C040921E824BFA884A7EF0974BD61D8868068171CB9FBFC8C76BA92B2365",
+  "version": "1.5.2",
+  "url": "https://github.com/SKIN-CODE/releases/releases/download/altospdf-v1.5.2/altosPDF.exe",
+  "size": 68910286,
+  "sha256": "363D09AC1A66646DEC7860D3EBF1A40F1D39D4028FC3F45C51D620EDABC3806F",
   "released": "2026-09-09",
-  "notes": "글자 삽입·글꼴 및 속성 선택, 삽입 글자 재편집, 입력창 바깥 클릭 확정, 배포본 경량화"
+  "notes": "업데이트 다운로드 후 파일 잠금 오류 수정. 시작 시 다운로드 및 적용/취소 팝업, 진행률과 취소, 적용 후 자동 재시작. 미저장 PDF 작업 보호."
 }
