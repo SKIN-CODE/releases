@@ -1,9 +1,9 @@
 {
   "app": "altospdf",
-  "version": "1.2.1",
-  "url": "https://github.com/SKIN-CODE/releases/releases/download/altospdf-v1.2.1/altosPDF.exe",
-  "size": 68990554,
-  "sha256": "6F5EED08A90708BE2407CF7CBA797B9B930C0790694AD74A7AC6587CFA9B1C07",
-  "released": "2026-09-02",
-  "notes": "제한을 푼 뒤 저장하지 않아도 바로 편집됩니다. 저장 옵션 창의 안내를 한 줄로 줄이고, 권한 제한 알림 문구를 바로잡았습니다."
+  "version": "1.5.1",
+  "url": "https://github.com/SKIN-CODE/releases/releases/download/altospdf-v1.5.1/altosPDF.exe",
+  "size": 68902963,
+  "sha256": "7676C040921E824BFA884A7EF0974BD61D8868068171CB9FBFC8C76BA92B2365",
+  "released": "2026-09-09",
+  "notes": "글자 삽입·글꼴 및 속성 선택, 삽입 글자 재편집, 입력창 바깥 클릭 확정, 배포본 경량화"
 }
