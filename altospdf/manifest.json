@@ -1,9 +1,9 @@
 {
   "app": "altospdf",
-  "version": "1.5.3",
-  "url": "https://github.com/SKIN-CODE/releases/releases/download/altospdf-v1.5.3/altosPDF.exe",
-  "size": 68910822,
-  "sha256": "496F40F6A3D53A14760B31B9FB45E7E8BCD6FC371C0430D095C9F9AC3D6F8859",
-  "released": "2026-09-09",
-  "notes": "PC 글꼴 풀다운 선택이 바깥 클릭 확정으로 가로막히던 회귀 수정. 글꼴 목록 가상화 및 표시 대기 개선. 속성창과 글꼴 목록에서도 Esc로 입력 취소."
+  "version": "1.5.5",
+  "url": "https://github.com/SKIN-CODE/releases/releases/download/altospdf-v1.5.5/altosPDF.exe",
+  "size": 68921321,
+  "sha256": "9D5EDE8594C678433F5A10A4155670698C8223C8807BAC0F390CAE3BF9F4A06D",
+  "released": "2026-09-10",
+  "notes": "삽입 글자 선택·드래그 이동, 빈 입력 취소와 입력 위치 밑줄 추가. 글자 수정 도구 클릭 우선순위 및 저장 후 권한 적용 수정. 형광펜 단어 사이 끊김 제거와 창 아이콘 크기 개선."
 }
