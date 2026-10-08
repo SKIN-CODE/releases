@@ -1,9 +1,9 @@
 {
   "app": "altospdf",
-  "version": "1.5.5",
-  "url": "https://github.com/SKIN-CODE/releases/releases/download/altospdf-v1.5.5/altosPDF.exe",
-  "size": 68921321,
-  "sha256": "9D5EDE8594C678433F5A10A4155670698C8223C8807BAC0F390CAE3BF9F4A06D",
-  "released": "2026-09-10",
-  "notes": "삽입 글자 선택·드래그 이동, 빈 입력 취소와 입력 위치 밑줄 추가. 글자 수정 도구 클릭 우선순위 및 저장 후 권한 적용 수정. 형광펜 단어 사이 끊김 제거와 창 아이콘 크기 개선."
+  "version": "1.6.0",
+  "url": "https://github.com/SKIN-CODE/releases/releases/download/altospdf-v1.6.0/altosPDF.exe",
+  "size": 68944049,
+  "sha256": "02FDF8E833160255B6ADB37130293594BCED38192FBD965D34CCCA59AF39B3CB",
+  "released": "2026-10-08",
+  "notes": "'PDF 저장'을 누르면 암호·권한 저장 창이 먼저 뜨도록 통합하고 상단 '저장 옵션' 단추를 삭제. JPG·PNG·GIF·BMP·TIFF로 쪽을 저장하는 '이미지 저장' 추가. 제한 문서는 상단 '제한 풀기'로 풉니다."
 }
