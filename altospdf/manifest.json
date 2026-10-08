@@ -1,9 +1,9 @@
 {
   "app": "altospdf",
-  "version": "1.6.0",
-  "url": "https://github.com/SKIN-CODE/releases/releases/download/altospdf-v1.6.0/altosPDF.exe",
-  "size": 68944049,
-  "sha256": "02FDF8E833160255B6ADB37130293594BCED38192FBD965D34CCCA59AF39B3CB",
+  "version": "1.6.1",
+  "url": "https://github.com/SKIN-CODE/releases/releases/download/altospdf-v1.6.1/altosPDF.exe",
+  "size": 68945508,
+  "sha256": "4F760E425292B646FF15CCCED795BAC79B0FE0FDA0402F5C946351B7B703621F",
   "released": "2026-10-08",
-  "notes": "'PDF 저장'을 누르면 암호·권한 저장 창이 먼저 뜨도록 통합하고 상단 '저장 옵션' 단추를 삭제. JPG·PNG·GIF·BMP·TIFF로 쪽을 저장하는 '이미지 저장' 추가. 제한 문서는 상단 '제한 풀기'로 풉니다."
+  "notes": "'PDF 저장' 창의 권한 체크를 '금지할 작업'으로 변경(기본은 체크 없음), 열기 암호 입력 규칙(영문자·숫자·특수문자 127자)과 빨간 안내 표시, 설명 글을 단어 단위로 줄바꿈."
 }
