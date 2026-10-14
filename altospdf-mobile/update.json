@@ -1,0 +1,25 @@
+{
+  "versionCode": 2,
+  "versionName": "1.0.0",
+  "publishedAt": "2026-10-14",
+  "apkUrl": "https://github.com/SKIN-CODE/releases/releases/download/altospdf-mobile-v1.0.0/altosPDF-1.0.0-arm64-v8a.apk",
+  "sha256": "e392e1eaa45d200734043e6f8bcf0f99ab2dac6bacbf1561c27d70ec2049982a",
+  "size": 25370020,
+  "apks": {
+    "arm64-v8a": {
+      "apkUrl": "https://github.com/SKIN-CODE/releases/releases/download/altospdf-mobile-v1.0.0/altosPDF-1.0.0-arm64-v8a.apk",
+      "sha256": "e392e1eaa45d200734043e6f8bcf0f99ab2dac6bacbf1561c27d70ec2049982a",
+      "size": 25370020
+    },
+    "armeabi-v7a": {
+      "apkUrl": "https://github.com/SKIN-CODE/releases/releases/download/altospdf-mobile-v1.0.0/altosPDF-1.0.0-armeabi-v7a.apk",
+      "sha256": "9c94ff52bcdd4ab8cc95b955398034351cad44245e46aab3b8af48476c3d3a68",
+      "size": 20685720
+    },
+    "x86_64": {
+      "apkUrl": "https://github.com/SKIN-CODE/releases/releases/download/altospdf-mobile-v1.0.0/altosPDF-1.0.0-x86_64.apk",
+      "sha256": "2c5f4e7d39f8e8ec189fb128d84dfa1d947fdc8e98b6db848789d293583333de",
+      "size": 27062312
+    }
+  }
+}
