@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
   "product": "winsnaplayout",
-  "version": "0.2.1",
-  "tag": "winsnaplayout-v0.2.1",
-  "releaseUrl": "https://github.com/SKIN-CODE/releases/releases/tag/winsnaplayout-v0.2.1",
-  "downloadUrl": "https://github.com/SKIN-CODE/releases/releases/download/winsnaplayout-v0.2.1/WinSnapLayout-0.2.1-win-anycpu.zip",
-  "sha256": "e1c82247107f7783355d6c2da285a021a60005bcd279d7f635f9d718d5829168",
-  "size": 87057,
+  "version": "0.2.2",
+  "tag": "winsnaplayout-v0.2.2",
+  "releaseUrl": "https://github.com/SKIN-CODE/releases/releases/tag/winsnaplayout-v0.2.2",
+  "downloadUrl": "https://github.com/SKIN-CODE/releases/releases/download/winsnaplayout-v0.2.2/WinSnapLayout-0.2.2-win-anycpu.zip",
+  "sha256": "fd8c17af535172468cd91204e58585eb142093a9c453b48acf5cb8560f45bc50",
+  "size": 86799,
   "sourceRepository": "https://github.com/SKIN-CODE/WinSnapLayout",
-  "sourceCommit": "dcc77718fe6051713d3a65d83b59edbfd9474bb5",
+  "sourceCommit": "61d6726e92067065e465aff07480fce22a8de5c0",
   "sourceDirty": false
 }
