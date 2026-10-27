@@ -6,7 +6,10 @@
 
 | 앱 | 설명 | 내려받기 |
 |---|---|---|
-| altosPDF | Windows용 PDF 보기·편집 프로그램 | [최신 판](https://github.com/SKIN-CODE/releases/releases/latest) |
+| [altosPDF](altospdf/) | Windows용 PDF 보기·편집 프로그램 | [최신 판](https://github.com/SKIN-CODE/releases/releases/latest) |
+| [altosPDF Mobile](altospdf-mobile/) | Android용 PDF 앱 | [1.2.2 배포 파일](https://github.com/SKIN-CODE/releases/releases/tag/altospdf-mobile-v1.2.2) |
+| [WinSnapLayout](winsnaplayout/) | Windows용 창 배치·저장·복원 프로그램 | [내려받기 및 설치 안내](winsnaplayout/) |
 
-내려받은 실행파일은 설치가 필요 없습니다. 그대로 실행하시면 됩니다.
-새 판이 나오면 앱이 알아서 알려 드립니다.
+설치·실행 및 업데이트 방법은 각 앱의 안내와 배포 페이지를 확인해 주세요.
+altosPDF는 앱에서 새 버전을 알리고 업데이트합니다.
+WinSnapLayout은 0.2.0부터 시작 시 자동 패치와 트레이·편집기의 업데이트 확인을 지원합니다. 0.1.0 사용자는 0.2.0을 한 번 수동으로 설치해야 합니다.
