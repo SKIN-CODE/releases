@@ -1,9 +1,9 @@
 {
   "app": "altospdf",
-  "version": "1.7.0",
-  "url": "https://github.com/SKIN-CODE/releases/releases/download/altospdf-v1.7.0/altosPDF.exe",
-  "size": 68979997,
-  "sha256": "07CDF03EE3140F72DD12BD1214FE90B6B7BB305B44A57437890F0A2D828E80A4",
-  "released": "2026-10-16",
-  "notes": "탐색기에서 이미지(JPG·PNG·GIF·BMP·TIFF·WebP·HEIC·AVIF)를 하나 또는 여러 개 골라 우클릭 'altosPDF ▸ 이미지를 PDF로 변환'으로 PDF 하나를 만드는 기능 추가. 해상도는 그대로 유지하고 사진 방향은 자동으로 바로잡으며, 순서·회전·쪽 크기(A4·Letter·이미지 크기)를 고를 수 있습니다."
+  "version": "1.7.1",
+  "url": "https://github.com/SKIN-CODE/releases/releases/download/altospdf-v1.7.1/altosPDF.exe",
+  "size": 68979815,
+  "sha256": "E4E24A8D8C5048E1440C1526ACAB2477998C1B5C1359C111F01D1DA2F24D80C9",
+  "released": "2026-10-27",
+  "notes": "탐색기 우클릭 편집 메뉴 중복 제거, 병합 창에서 문서 보기·문서 수정 탭 비활성화"
 }
