@@ -1,9 +1,9 @@
 {
   "app": "altospdf",
-  "version": "1.7.1",
-  "url": "https://github.com/SKIN-CODE/releases/releases/download/altospdf-v1.7.1/altosPDF.exe",
-  "size": 68979815,
-  "sha256": "E4E24A8D8C5048E1440C1526ACAB2477998C1B5C1359C111F01D1DA2F24D80C9",
-  "released": "2026-10-27",
-  "notes": "탐색기 우클릭 편집 메뉴 중복 제거, 병합 창에서 문서 보기·문서 수정 탭 비활성화"
+  "version": "1.8.0",
+  "url": "https://github.com/SKIN-CODE/releases/releases/download/altospdf-v1.8.0/altosPDF.exe",
+  "size": 68997011,
+  "sha256": "3453DC7994B6D1088DA16CACA73E40D1607A6B02FDFD006F6B29414CB8DCDFFF",
+  "released": "2026-11-04",
+  "notes": "문서 편집·문서 수정에서 바꾼 쪽(삭제·순서·회전·복제)과 고친 글자·형광펜이 문서 보기·인쇄·이미지 저장에 'PDF 저장' 결과 그대로 보임. 문서 수정·문서 편집도 서로의 쪽 편집을 따름"
 }
