@@ -1,9 +1,9 @@
 {
   "app": "altospdf",
-  "version": "1.9.0",
-  "url": "https://github.com/SKIN-CODE/releases/releases/download/altospdf-v1.9.0/altosPDF.exe",
-  "size": 69005847,
-  "sha256": "20C7F684F4E09898541B20E2CE9B7B8919908F9F72FFB853081DF2DE7616204A",
+  "version": "1.9.1",
+  "url": "https://github.com/SKIN-CODE/releases/releases/download/altospdf-v1.9.1/altosPDF.exe",
+  "size": 69006510,
+  "sha256": "F3E43C9991DA2D2F0C41EEFB560370294FD5FBBDF20583624A338C54AA810E3C",
   "released": "2026-11-11",
-  "notes": "문서 보기에 전체 화면 보기(메뉴 없이 모니터를 채움, Ctrl+휠 확대·축소와 자석, Esc 복귀) 추가. 권한 제한 안내는 문서 편집·문서 수정에서만 표시. 썸네일 칸이 쪽의 가로세로 비율을 따름."
+  "notes": "문서 편집의 쪽 구성 카드가 쪽의 가로세로 비율을 따름. 배율을 연달아 바꿀 때 쪽이 빈 채 남던 문제와, 가로 문서를 세로 화면에서 볼 때 아래쪽 쪽이 그려지지 않던 문제 수정."
 }
