@@ -1,9 +1,9 @@
 {
   "app": "altospdf",
-  "version": "1.9.2",
-  "url": "https://github.com/SKIN-CODE/releases/releases/download/altospdf-v1.9.2/altosPDF.exe",
-  "size": 69006116,
-  "sha256": "54545AC59DE7D8FC99ECD385C10B5E679091415849A217E18BD3F0A183D5AD6A",
+  "version": "1.9.3",
+  "url": "https://github.com/SKIN-CODE/releases/releases/download/altospdf-v1.9.3/altosPDF.exe",
+  "size": 69034944,
+  "sha256": "76EF9DF93B96F710011CE56E54A73CBE773379584BBB24FF7C2B712241895337",
   "released": "2026-11-13",
-  "notes": "앱 아이콘을 새 디자인으로 교체"
+  "notes": "아이콘을 도형 크기에 맞춰 키우고 배경을 투명으로 변경, 앱 안 로고 교체"
 }
