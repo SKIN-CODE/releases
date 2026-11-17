@@ -15,3 +15,7 @@ PC용 버전은 설치 없이 다운로드하고 실행하면 바로 실행되�
 ## 연락처
 
 - devalto9@gmail.com
+
+## 다운로드 페이지
+
+- [alto의 앱 다운로드](https://skin-code.github.io/releases/): 앱별 최신판을 내려받고, 로그인 없이 익명으로 요구사항을 보낼 수 있습니다.
