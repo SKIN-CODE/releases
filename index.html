@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>alto의 앱 다운로드</title>
-<meta name="description" content="alto가 만든 앱의 최신판을 내려받는 곳입니다.">
+<meta name="description" content="alto가 만든 Windows PC용 앱의 최신판을 내려받는 곳입니다.">
 <style>
   :root {
     --bg: #f7f7f5;
@@ -59,6 +59,14 @@
   }
   .links a small { font-weight: 400; opacity: 0.85; }
   .links a:hover { filter: brightness(1.08); }
+  .links .soon {
+    display: inline-block;
+    padding: 7px 14px;
+    border: 1px dashed var(--line);
+    border-radius: 8px;
+    color: var(--muted);
+    font-weight: 600;
+  }
   .status { color: var(--muted); }
   .status a { color: var(--accent); }
 </style>
@@ -66,7 +74,7 @@
 <body>
 <main>
   <h1>alto의 앱 다운로드</h1>
-  <p class="intro">alto가 만든 앱의 최신판을 이곳에서 내려받을 수 있습니다. 단추를 누르면 설치 파일을 바로 받습니다.</p>
+  <p class="intro">alto가 만든 Windows PC용 앱의 최신판을 이곳에서 내려받을 수 있습니다. 단추를 누르면 파일을 바로 받습니다.</p>
   <div id="apps"><p class="status">최신판을 불러오는 중입니다…</p></div>
   <noscript><p class="status">이 페이지는 JavaScript가 필요합니다. <a href="https://github.com/SKIN-CODE/releases/releases">GitHub 배포 목록</a>에서 직접 받을 수 있습니다.</p></noscript>
 </main>
@@ -75,12 +83,14 @@
   "use strict";
 
   // 앱 이름과 소개. 태그 앞부분(예: altosmemo-v0.1.0 → altosmemo)으로 찾습니다.
+  // 여기 있는 앱은 릴리스가 아직 없으면 「준비 중」으로 나오고, 첫 릴리스가 올라오면 다운로드 단추로 바뀝니다.
+  // hidden: true인 앱은 릴리스가 있어도 이 페이지에 보이지 않습니다(릴리스·태그는 그대로 둠).
   // 여기에 없는 새 앱도 태그 규칙만 지키면 태그 앞부분을 이름으로 해서 자동으로 나옵니다.
   var APPS = [
-    { id: "altosmemo",       name: "altosMEMO",       desc: "Windows와 Android에서 함께 쓰는 메모 앱" },
+    { id: "altosmemo",       name: "altosMEMO",       desc: "Windows PC와 Android에서 같은 계정으로 동기화되는 메모 앱. 메모 제목과 유사어로 메모끼리 이어 주는 백링크가 핵심입니다." },
     { id: "altospdf",        name: "altosPDF",        desc: "Windows용 PDF 보기·편집 프로그램" },
-    { id: "altospdf-mobile", name: "altosPDF Mobile", desc: "Android용 PDF 앱" },
-    { id: "winsnaplayout",   name: "WinSnapLayout",   desc: "Windows용 창 배치·저장·복원 프로그램" }
+    { id: "winsnaplayout",   name: "WinSnapLayout",   desc: "Windows용 창 배치·저장·복원 프로그램" },
+    { id: "altospdf-mobile", hidden: true }   // Play 스토어로 배포하므로 이 페이지에는 싣지 않음
   ];
 
   var REPO = "SKIN-CODE/releases";
@@ -153,7 +163,7 @@
     });
 
     var known = APPS.map(function (a) { return a.id; });
-    var ids = known.filter(function (id) { return latest[id]; })
+    var ids = APPS.filter(function (a) { return !a.hidden; }).map(function (a) { return a.id; })
       .concat(Object.keys(latest).filter(function (id) { return known.indexOf(id) < 0; }).sort());
 
     box.innerHTML = "";
@@ -164,10 +174,16 @@
       var it = latest[id];
       var card = el("section", "app");
       var h = el("h2", null, info.name);
-      h.appendChild(el("span", "ver", "v" + it.v.join(".")));
+      if (it) h.appendChild(el("span", "ver", "v" + it.v.join(".")));
       card.appendChild(h);
       if (info.desc) card.appendChild(el("p", null, info.desc));
       var links = el("div", "links");
+      if (!it) {
+        links.appendChild(el("span", "soon", "준비 중"));
+        card.appendChild(links);
+        box.appendChild(card);
+        return;
+      }
       it.r.assets.forEach(function (a) {
         var kind = kindOf(a.name);
         if (!kind) return;
