@@ -5,7 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>alto의 앱 다운로드</title>
 <meta name="description" content="alto가 만든 Windows PC용 앱의 최신판을 내려받는 곳입니다.">
+<link rel="preload" href="fonts/Paperlogy-8ExtraBold.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/Pretendard-Regular.woff2" as="font" type="font/woff2" crossorigin>
 <style>
+  /* 글꼴: 제목은 Paperlogy, 나머지는 Pretendard (둘 다 SIL OFL 1.1, fonts/ 폴더의 LICENSE 참고) */
+  @font-face { font-family: "Paperlogy"; src: url("fonts/Paperlogy-7Bold.woff2") format("woff2"); font-weight: 700; font-display: swap; }
+  @font-face { font-family: "Paperlogy"; src: url("fonts/Paperlogy-8ExtraBold.woff2") format("woff2"); font-weight: 800; font-display: swap; }
+  @font-face { font-family: "Pretendard"; src: url("fonts/Pretendard-Regular.woff2") format("woff2"); font-weight: 400; font-display: swap; }
+  @font-face { font-family: "Pretendard"; src: url("fonts/Pretendard-SemiBold.woff2") format("woff2"); font-weight: 600; font-display: swap; }
   :root {
     --bg: #f7f7f5;
     --card: #ffffff;
@@ -31,11 +38,14 @@
     margin: 0;
     background: var(--bg);
     color: var(--text);
-    font-family: Pretendard, "Malgun Gothic", "Apple SD Gothic Neo", system-ui, sans-serif;
+    font-family: "Pretendard", sans-serif;
+    font-weight: 400;
     line-height: 1.6;
   }
   main { max-width: 720px; margin: 0 auto; padding: 48px 16px 64px; }
-  h1 { font-size: 1.8rem; margin: 0 0 8px; }
+  h1, h2 { font-family: "Paperlogy", "Pretendard", sans-serif; }
+  h1 { font-size: 1.8rem; font-weight: 800; margin: 0 0 8px; }
+  h2 { font-weight: 700; }
   .intro { color: var(--muted); margin: 0 0 32px; }
   .app {
     background: var(--card);
@@ -45,7 +55,7 @@
     margin-bottom: 16px;
   }
   .app h2 { font-size: 1.2rem; margin: 0; }
-  .app h2 .ver { font-size: 0.9rem; font-weight: 400; color: var(--muted); margin-left: 6px; }
+  .app h2 .ver { font-family: "Pretendard", sans-serif; font-size: 0.9rem; font-weight: 400; color: var(--muted); margin-left: 6px; }
   .app p { margin: 4px 0 14px; color: var(--muted); }
   .links { display: flex; flex-wrap: wrap; gap: 8px; }
   .links a {
