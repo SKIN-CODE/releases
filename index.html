@@ -69,6 +69,39 @@
   }
   .status { color: var(--muted); }
   .status a { color: var(--accent); }
+  h2.section { font-size: 1.2rem; margin: 40px 0 8px; }
+  .contact a, .note a { color: var(--accent); }
+  .note { color: var(--muted); margin: 0 0 16px; font-size: 0.95rem; }
+  form .field { margin-bottom: 14px; }
+  form label { display: block; font-weight: 600; margin-bottom: 6px; }
+  form label small { font-weight: 400; color: var(--muted); }
+  form select, form textarea, form input[type=email] {
+    width: 100%;
+    font: inherit;
+    color: var(--text);
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 9px 11px;
+  }
+  form textarea { min-height: 140px; resize: vertical; }
+  form fieldset { border: 0; padding: 0; }
+  form legend { font-weight: 600; margin-bottom: 6px; padding: 0; }
+  form legend small { font-weight: 400; color: var(--muted); }
+  form label.check { display: inline-flex; align-items: center; gap: 6px; font-weight: 400; margin: 0 16px 4px 0; }
+  form button {
+    font: inherit;
+    font-weight: 600;
+    background: var(--accent);
+    color: var(--accent-text);
+    border: 0;
+    border-radius: 8px;
+    padding: 9px 18px;
+    cursor: pointer;
+  }
+  form button:disabled { opacity: 0.6; cursor: default; }
+  .trap { position: absolute; left: -9999px; }
+  #fb-result { margin-top: 12px; }
 </style>
 </head>
 <body>
@@ -77,6 +110,35 @@
   <p class="intro">alto가 만든 Windows PC용 앱의 최신판을 이곳에서 내려받을 수 있습니다. 단추를 누르면 파일을 바로 받습니다.</p>
   <div id="apps"><p class="status">최신판을 불러오는 중입니다…</p></div>
   <noscript><p class="status">이 페이지는 JavaScript가 필요합니다. <a href="https://github.com/SKIN-CODE/releases/releases">GitHub 배포 목록</a>에서 직접 받을 수 있습니다.</p></noscript>
+
+  <h2 class="section">연락처</h2>
+  <p class="contact"><a href="mailto:devalto9@gmail.com">devalto9@gmail.com</a></p>
+
+  <h2 class="section">요구사항 보내기</h2>
+  <p class="note">고칠 점이나 바라는 기능을 로그인 없이 익명으로 보낼 수 있습니다. 보낸 내용은 공개되지 않고 개발자만 읽습니다.</p>
+  <div id="fb-box">
+    <p class="status" id="fb-soon">준비 중입니다. 그동안은 위 연락처로 보내 주세요.</p>
+    <form id="fb-form" hidden>
+      <fieldset class="field" id="fb-apps">
+        <legend>어떤 앱인가요? <small>(여러 개 골라도 됩니다)</small></legend>
+        <label class="check"><input type="checkbox" name="fb-app" value="altosMEMO"> altosMEMO</label>
+        <label class="check"><input type="checkbox" name="fb-app" value="altosPDF"> altosPDF</label>
+        <label class="check"><input type="checkbox" name="fb-app" value="WinSnapLayout"> WinSnapLayout</label>
+      </fieldset>
+      <div class="field">
+        <label for="fb-body">요구사항</label>
+        <textarea id="fb-body" required maxlength="5000" placeholder="고칠 점이나 바라는 기능을 자유롭게 적어 주세요. 구체적일수록 좋습니다."></textarea>
+      </div>
+      <div class="field">
+        <label for="fb-email">답장 받을 이메일 <small>(선택, 비워 두면 완전히 익명입니다)</small></label>
+        <input type="email" id="fb-email" autocomplete="email">
+      </div>
+      <input type="text" id="fb-trap" class="trap" tabindex="-1" autocomplete="off" aria-hidden="true">
+      <p class="note">이메일을 적으면 답장을 보내는 데에만 쓰고, 공개하거나 다른 곳에 쓰지 않습니다. 지워 달라고 하시면 지웁니다. 보낸 내용은 개발자의 Google 설문지에 저장됩니다.</p>
+      <button type="submit" id="fb-send">보내기</button>
+      <p class="status" id="fb-result" role="status"></p>
+    </form>
+  </div>
 </main>
 <script>
 (function () {
@@ -199,6 +261,59 @@
   }
 
   loadReleases().then(render).catch(fail);
+})();
+
+(function () {
+  "use strict";
+
+  // 요구사항 보내기: 개발자의 Google 설문지 「alto의 App에 의견 보내기」로 바로 보냅니다(서버 없음).
+  // 설문지 질문을 바꾸면 entry 번호와 앱 선택지(위 체크박스 value)를 설문지와 똑같이 맞춰야 합니다.
+  // 답장 받을 이메일은 설문지에 따로 질문이 없어서, 적은 경우 의견 끝에 붙여 보냅니다.
+  var FORM = {
+    action: "https://docs.google.com/forms/d/e/1FAIpQLSdb0eD7PL-BMx1nm0_X65dcJrjxanjL27ouYUPXHl91AYl2eg/formResponse",
+    view:   "https://docs.google.com/forms/d/e/1FAIpQLSdb0eD7PL-BMx1nm0_X65dcJrjxanjL27ouYUPXHl91AYl2eg/viewform",
+    app:  "entry.1654047421",   // 앱을 골라 주세요. (체크박스, 필수)
+    body: "entry.1407611722"    // 의견을 자유롭게 적어 주세요. (장문형, 필수)
+  };
+  if (!FORM.action || !FORM.app || !FORM.body) return;
+
+  var form = document.getElementById("fb-form");
+  var result = document.getElementById("fb-result");
+  var send = document.getElementById("fb-send");
+  document.getElementById("fb-soon").hidden = true;
+  form.hidden = false;
+
+  form.addEventListener("submit", function (ev) {
+    ev.preventDefault();
+    var apps = [].slice.call(form.querySelectorAll('input[name="fb-app"]:checked')).map(function (c) { return c.value; });
+    var body = document.getElementById("fb-body").value.trim();
+    var email = document.getElementById("fb-email").value.trim();
+    if (!apps.length) { result.textContent = "앱을 하나 이상 골라 주세요."; return; }
+    if (!body) { result.textContent = "요구사항을 적어 주세요."; return; }
+    if (document.getElementById("fb-trap").value) { result.textContent = "보냈습니다. 고맙습니다."; form.reset(); return; }
+
+    var data = new URLSearchParams();
+    apps.forEach(function (a) { data.append(FORM.app, a); });
+    data.append(FORM.body, email ? body + "\n\n[답장 받을 이메일] " + email : body);
+
+    send.disabled = true;
+    result.textContent = "보내는 중입니다…";
+    fetch(FORM.action, { method: "POST", mode: "no-cors", body: data })
+      .then(function () {
+        result.textContent = "보냈습니다. 고맙습니다.";
+        form.reset();
+      })
+      .catch(function () {
+        result.textContent = "보내지 못했습니다. 잠시 뒤 다시 시도하거나 위 연락처로 보내 주세요.";
+        if (FORM.view) {
+          var a = document.createElement("a");
+          a.href = FORM.view; a.target = "_blank"; a.rel = "noopener";
+          a.textContent = " 설문지에서 직접 보내기";
+          result.appendChild(a);
+        }
+      })
+      .then(function () { send.disabled = false; });
+  });
 })();
 </script>
 </body>
