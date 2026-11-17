@@ -4,18 +4,8 @@
 PC용 버전은 설치 없이 다운로드하고 실행하면 바로 실행되는 방식입니다.
 
 
-## alto's Apps
-
-| 앱 | 설명 | 내려받기 |
-|---|---|---|
-| [altosPDF](altospdf/) | Windows용 PDF 보기·편집 프로그램 | [다운로드](https://github.com/SKIN-CODE/releases/releases/latest) |
-| [WinSnapLayout](winsnaplayout/) | Windows용 창 배치·저장·복원 프로그램 | [다운로드](winsnaplayout/) |
-
-
-## 연락처
-
-- devalto9@gmail.com
-
 ## 다운로드 페이지
 
-- [alto의 앱 다운로드](https://skin-code.github.io/releases/): 앱별 최신판을 내려받고, 로그인 없이 익명으로 요구사항을 보낼 수 있습니다.
+- [alto의 앱 다운로드](https://skin-code.github.io/releases/):
+-
+- 앱별 최신판을 내려받고, 로그인 없이 익명으로 요구사항을 보낼 수 있습니다.
