@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>alto의 앱 다운로드</title>
+<meta name="description" content="alto가 만든 앱의 최신판을 내려받는 곳입니다.">
+<style>
+  :root {
+    --bg: #f7f7f5;
+    --card: #ffffff;
+    --text: #1f2328;
+    --muted: #656d76;
+    --line: #e3e3df;
+    --accent: #2f6fde;
+    --accent-text: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #16181b;
+      --card: #1f2226;
+      --text: #e6e8eb;
+      --muted: #9aa3ad;
+      --line: #30343a;
+      --accent: #5b93f0;
+      --accent-text: #0e1116;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: Pretendard, "Malgun Gothic", "Apple SD Gothic Neo", system-ui, sans-serif;
+    line-height: 1.6;
+  }
+  main { max-width: 720px; margin: 0 auto; padding: 48px 16px 64px; }
+  h1 { font-size: 1.8rem; margin: 0 0 8px; }
+  .intro { color: var(--muted); margin: 0 0 32px; }
+  .app {
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 16px;
+  }
+  .app h2 { font-size: 1.2rem; margin: 0; }
+  .app h2 .ver { font-size: 0.9rem; font-weight: 400; color: var(--muted); margin-left: 6px; }
+  .app p { margin: 4px 0 14px; color: var(--muted); }
+  .links { display: flex; flex-wrap: wrap; gap: 8px; }
+  .links a {
+    display: inline-block;
+    background: var(--accent);
+    color: var(--accent-text);
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-weight: 600;
+  }
+  .links a small { font-weight: 400; opacity: 0.85; }
+  .links a:hover { filter: brightness(1.08); }
+  .status { color: var(--muted); }
+  .status a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <h1>alto의 앱 다운로드</h1>
+  <p class="intro">alto가 만든 앱의 최신판을 이곳에서 내려받을 수 있습니다. 단추를 누르면 설치 파일을 바로 받습니다.</p>
+  <div id="apps"><p class="status">최신판을 불러오는 중입니다…</p></div>
+  <noscript><p class="status">이 페이지는 JavaScript가 필요합니다. <a href="https://github.com/SKIN-CODE/releases/releases">GitHub 배포 목록</a>에서 직접 받을 수 있습니다.</p></noscript>
+</main>
+<script>
+(function () {
+  "use strict";
+
+  // 앱 이름과 소개. 태그 앞부분(예: altosmemo-v0.1.0 → altosmemo)으로 찾습니다.
+  // 여기에 없는 새 앱도 태그 규칙만 지키면 태그 앞부분을 이름으로 해서 자동으로 나옵니다.
+  var APPS = [
+    { id: "altosmemo",       name: "altosMEMO",       desc: "Windows와 Android에서 함께 쓰는 메모 앱" },
+    { id: "altospdf",        name: "altosPDF",        desc: "Windows용 PDF 보기·편집 프로그램" },
+    { id: "altospdf-mobile", name: "altosPDF Mobile", desc: "Android용 PDF 앱" },
+    { id: "winsnaplayout",   name: "WinSnapLayout",   desc: "Windows용 창 배치·저장·복원 프로그램" }
+  ];
+
+  var REPO = "SKIN-CODE/releases";
+  var TAG_RE = /^(.+)-v(\d+)\.(\d+)\.(\d+)$/;  // 앱이름-vX.Y.Z (예비판 꼬리표가 붙은 태그는 제외)
+  var box = document.getElementById("apps");
+
+  function kindOf(name) {
+    var n = name.toLowerCase();
+    if (/\.(sig|sha256|json|txt|blockmap)$/.test(n)) return null;      // 검증·정보 파일은 숨김
+    if (/\.(nsis|msi)\.zip$/.test(n)) return null;                     // Tauri 자동 업데이트용 묶음은 숨김
+    if (n.endsWith(".apk")) return "Android APK";
+    if (n.endsWith(".msi")) return "Windows 설치 파일 (.msi)";
+    if (n.endsWith(".exe")) return "Windows 설치 파일";
+    if (n.endsWith(".zip")) return "ZIP 파일";
+    if (n.endsWith(".dmg")) return "macOS";
+    return "내려받기";
+  }
+
+  function sizeText(bytes) {
+    if (!bytes) return "";
+    var mb = bytes / 1048576;
+    return mb >= 1 ? mb.toFixed(mb >= 10 ? 0 : 1) + " MB" : Math.max(1, Math.round(bytes / 1024)) + " KB";
+  }
+
+  function newer(a, b) {
+    for (var i = 0; i < 3; i++) if (a.v[i] !== b.v[i]) return a.v[i] > b.v[i];
+    return false;
+  }
+
+  function el(tag, cls, text) {
+    var e = document.createElement(tag);
+    if (cls) e.className = cls;
+    if (text != null) e.textContent = text;
+    return e;
+  }
+
+  function fail() {
+    box.innerHTML = "";
+    var p = el("p", "status", "최신판 목록을 지금 불러오지 못했습니다. 잠시 뒤 다시 열거나 ");
+    var a = el("a", null, "GitHub 배포 목록");
+    a.href = "https://github.com/" + REPO + "/releases";
+    p.appendChild(a);
+    p.appendChild(document.createTextNode("에서 직접 받아 주세요."));
+    box.appendChild(p);
+  }
+
+  async function loadReleases() {
+    var all = [];
+    for (var page = 1; page <= 10; page++) {
+      var res = await fetch("https://api.github.com/repos/" + REPO + "/releases?per_page=100&page=" + page,
+                            { headers: { Accept: "application/vnd.github+json" } });
+      if (!res.ok) throw new Error("HTTP " + res.status);
+      var list = await res.json();
+      all = all.concat(list);
+      if (list.length < 100) break;
+    }
+    return all;
+  }
+
+  function render(releases) {
+    var latest = {};
+    releases.forEach(function (r) {
+      if (r.draft || r.prerelease) return;
+      var m = TAG_RE.exec(r.tag_name || "");
+      if (!m) return;
+      var item = { id: m[1], v: [+m[2], +m[3], +m[4]], r: r };
+      var files = (r.assets || []).filter(function (a) { return kindOf(a.name); });
+      if (!files.length) return;
+      if (!latest[item.id] || newer(item, latest[item.id])) latest[item.id] = item;
+    });
+
+    var known = APPS.map(function (a) { return a.id; });
+    var ids = known.filter(function (id) { return latest[id]; })
+      .concat(Object.keys(latest).filter(function (id) { return known.indexOf(id) < 0; }).sort());
+
+    box.innerHTML = "";
+    if (!ids.length) { fail(); return; }
+
+    ids.forEach(function (id) {
+      var info = APPS.filter(function (a) { return a.id === id; })[0] || { name: id, desc: "" };
+      var it = latest[id];
+      var card = el("section", "app");
+      var h = el("h2", null, info.name);
+      h.appendChild(el("span", "ver", "v" + it.v.join(".")));
+      card.appendChild(h);
+      if (info.desc) card.appendChild(el("p", null, info.desc));
+      var links = el("div", "links");
+      it.r.assets.forEach(function (a) {
+        var kind = kindOf(a.name);
+        if (!kind) return;
+        var link = el("a", null, kind + " ");
+        link.href = a.browser_download_url;
+        link.title = a.name;
+        link.appendChild(el("small", null, sizeText(a.size)));
+        links.appendChild(link);
+      });
+      card.appendChild(links);
+      box.appendChild(card);
+    });
+  }
+
+  loadReleases().then(render).catch(fail);
+})();
+</script>
+</body>
+</html>
