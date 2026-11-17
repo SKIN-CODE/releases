@@ -54,7 +54,10 @@
     padding: 20px;
     margin-bottom: 16px;
   }
-  .app h2 { font-size: 1.2rem; margin: 0; }
+  .app h2 { font-size: 1.2rem; margin: 0; color: var(--app-color, var(--text)); }
+  @media (prefers-color-scheme: dark) {
+    .app h2 { color: var(--app-color-dark, var(--app-color, var(--text))); }
+  }
   .app h2 .ver { font-family: "Pretendard", sans-serif; font-size: 0.9rem; font-weight: 400; color: var(--muted); margin-left: 6px; }
   .app p { margin: 4px 0 14px; color: var(--muted); }
   .links { display: flex; flex-wrap: wrap; gap: 8px; }
@@ -158,10 +161,14 @@
   // 여기 있는 앱은 릴리스가 아직 없으면 「준비 중」으로 나오고, 첫 릴리스가 올라오면 다운로드 단추로 바뀝니다.
   // hidden: true인 앱은 릴리스가 있어도 이 페이지에 보이지 않습니다(릴리스·태그는 그대로 둠).
   // 여기에 없는 새 앱도 태그 규칙만 지키면 태그 앞부분을 이름으로 해서 자동으로 나옵니다.
+  // color는 앱 아이콘의 대표색(밝은 화면), dark는 어두운 화면에서 읽히도록 밝힌 같은 계열 색입니다.
   var APPS = [
-    { id: "altosmemo",       name: "altosMEMO",       desc: "Windows PC와 Android에서 같은 계정으로 동기화되는 메모 앱. 메모 제목과 유사어로 메모끼리 이어 주는 백링크가 핵심입니다." },
-    { id: "altospdf",        name: "altosPDF",        desc: "Windows용 PDF 보기·편집 프로그램" },
-    { id: "winsnaplayout",   name: "WinSnapLayout",   desc: "Windows용 창 배치·저장·복원 프로그램" },
+    { id: "altosmemo",       name: "altosMEMO",       color: "#A61237", dark: "#EE5F80",
+      desc: "Windows PC와 Android에서 같은 계정으로 동기화되는 메모 앱입니다. 메모 제목과 유사어를 다른 메모 본문에서 찾아 메모끼리 이어 주는 백링크가 핵심입니다. 인터넷이 끊겨도 기기에 저장해 두었다가 연결되면 올립니다." },
+    { id: "altospdf",        name: "altosPDF",        color: "#C60080", dark: "#F45CBF",
+      desc: "PDF 보기, 쪽 편집(삭제·순서 바꾸기·추출·병합), 글자·형광펜 수정을 한 프로그램에 담은 Windows용 PDF 도구입니다. 설치 없이 실행 파일 하나로 쓰고, 문서를 외부로 보내지 않으며 원본은 그대로 둔 채 새 파일로 저장합니다. 탐색기에서 고른 이미지를 PDF로 만들 수도 있습니다." },
+    { id: "winsnaplayout",   name: "WinSnapLayout",   color: "#0078D4", dark: "#4CA6F0",
+      desc: "여러 창의 배치를 9개 슬롯에 저장해 두고 단축키 하나로 다시 불러오는 Windows 트레이 프로그램입니다. 편집기에서 모니터별로 앱을 넣고 빼면 줄과 칸을 고르게 나눠 배치합니다. ZIP을 풀어 바로 실행하며 설치가 필요 없습니다." },
     { id: "altospdf-mobile", hidden: true }   // Play 스토어로 배포하므로 이 페이지에는 싣지 않음
   ];
 
@@ -246,6 +253,8 @@
       var it = latest[id];
       var card = el("section", "app");
       var h = el("h2", null, info.name);
+      if (info.color) h.style.setProperty("--app-color", info.color);
+      if (info.dark) h.style.setProperty("--app-color-dark", info.dark);
       if (it) h.appendChild(el("span", "ver", "v" + it.v.join(".")));
       card.appendChild(h);
       if (info.desc) card.appendChild(el("p", null, info.desc));
