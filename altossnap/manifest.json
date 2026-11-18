@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "product": "altossnap",
+  "version": "0.3.0",
+  "tag": "winsnaplayout-v0.3.0",
+  "releaseUrl": "https://github.com/SKIN-CODE/releases/releases/tag/winsnaplayout-v0.3.0",
+  "downloadUrl": "https://github.com/SKIN-CODE/releases/releases/download/winsnaplayout-v0.3.0/altosSNAP.exe",
+  "sha256": "0535d203faa600dde8ac75a63e2812633e349487ac03d90b6c9c12d4fc11a347",
+  "size": 194560,
+  "sourceRepository": "https://github.com/SKIN-CODE/WinSnapLayout",
+  "sourceCommit": "461842f6b0144560bb92f8e156a418ef48c59564",
+  "sourceDirty": false
+}
