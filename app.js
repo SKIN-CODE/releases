@@ -121,6 +121,10 @@
       var msg = el("p", "dl-msg");
       msg.setAttribute("role", "status");
       var files = it.r.assets.filter(usable);
+      if (id === "winsnaplayout") {
+        var executable = files.filter(function (asset) { return asset.name === "altosSNAP.exe"; });
+        if (executable.length) files = executable;
+      }
       files.forEach(function (a) {
         // 단추 이름은 「다운로드 (용량)」. 한 앱에 파일이 둘 이상이면 무엇인지(Windows·Android 등)를 앞에 붙입니다.
         var label = (files.length > 1 ? kindOf(a.name) + " " : "") + "다운로드";
