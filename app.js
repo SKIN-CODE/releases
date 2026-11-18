@@ -132,17 +132,12 @@
         link.href = a.browser_download_url;
         link.title = a.name;
         link.appendChild(el("small", null, "(" + sizeText(a.size) + ")"));
-        // 내려받기는 브라우저가 조용히 시작하므로, 누른 것을 알 수 있게 단추 아래에 안내를 띄웁니다.
+        // 내려받기는 브라우저가 조용히 시작하므로, 누른 것을 알 수 있게 단추 아래에 짧은 안내를 띄웁니다.
+        // 브라우저마다(저장 위치를 묻는지 등) 다르게 동작하므로 어느 브라우저에도 맞는 말만 씁니다.
         link.addEventListener("click", function () {
           msg.textContent = "";
           msg.appendChild(el("strong", null, a.name + " (" + sizeText(a.size) + ")"));
-          msg.appendChild(document.createTextNode(
-            " 내려받기를 시작했습니다. 크기에 따라 몇 초에서 몇 분 걸립니다. " +
-            "진행 상황은 브라우저의 다운로드 목록에서 볼 수 있습니다(Windows는 Ctrl+J). " +
-            "저장할 곳을 직접 고르려면 단추를 마우스 오른쪽으로 눌러 「다른 이름으로 링크 저장」을 고르세요."));
-          // 받은 파일이 올린 파일과 같은지 확인할 수 있도록 GitHub가 계산한 SHA-256을 함께 보여 줍니다.
-          var m = /^sha256:([0-9a-f]{64})$/.exec(a.digest || "");
-          if (m) msg.appendChild(el("span", "hash", "SHA-256: " + m[1]));
+          msg.appendChild(document.createTextNode(" 내려받기를 시작했습니다. 진행 상황은 브라우저의 다운로드 목록에서 확인하세요."));
           msg.classList.add("show");
         });
         links.appendChild(link);
