@@ -1,13 +1,13 @@
 {
-  "version": "0.1.3",
-  "notes": "설정에서 구글 계정을 연결할 수 있습니다. PC 카드 칸 수를 1칸부터 정할 수 있고, 편집 창을 끌어서 옮길 수 있습니다. 휴지통 자동 비우기는 서버 시각을 기준으로 합니다.",
-  "pub_date": "2026-11-19T09:08:39Z",
+  "version": "0.1.4",
+  "notes": "PC 설정 「휴대폰에 설치」 칸에 Android 앱을 받는 QR 코드와 Google Play 테스트 참여 링크가 생겼습니다. 이메일과 구글 계정이 모두 연결된 계정은 계정 칸에 두 방법으로 로그인할 수 있다고 표시합니다.",
+  "pub_date": "2026-11-19T16:02:51Z",
   "platforms": {
     "windows-x86_64": {
-      "url": "https://github.com/SKIN-CODE/releases/releases/download/altosmemo-v0.1.3/altosMEMO.exe",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRWGRVV1FBUnozWmJVYVZ6YmREZEk2TnZFU1FEYzVrdEJxeEFjTG1ac3Q0c0tqcHNEQlhhWHVrNEtVK1pHVXFiNWpzcjU1MDJySG9KS1lxT09lQzA0SnYvUGlsSlFBZGcwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MDc5MjU4CWZpbGU6YWx0b3NNRU1PLmV4ZQl2ZXJzaW9uOjAuMS4zCmMvU3Vpa0pUYWdxSE4xSVpGMWhrUDl0djVoaGtqTThWekpId0NqQ1AyYnR3Ym9tSzd0aTN2U09RYmJhRnVWeGY5TTdIWnpXOWpJa0d0cVZQc2syeEJBPT0K"
+      "url": "https://github.com/SKIN-CODE/releases/releases/download/altosmemo-v0.1.4/altosMEMO.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRWGRVV1FBUnozWmJPWGhYL1lDbThZcFNVUVhCTEdlSVBjbTFKLy83c2hVYzhFOWk3UXNFa2tFYWFrbHJJbTJyVGVzNWNmSkFZcVpUbGFoQzFjcXlTbSt2cDNWZmlRTFFZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MTA0MTI1CWZpbGU6YWx0b3NNRU1PLmV4ZQl2ZXJzaW9uOjAuMS40Cmc0aElhRDdINFpJa3NFa2F1NVlHaU1BOW16TGo1Vm9jMldkUllTZ1dhZmJZaEdkWmN0dUYzSllUZGdvcXpOTkRCaVpSMXY4bjIwL0JIL2QzdFRWK0N3PT0K"
     }
   },
   "size": 11363328,
-  "sha256": "497EF9EBD6C5A3905DDFA921CF2476904ED796F38D276BB14292ECCBC7B012C7"
+  "sha256": "C106B58A8E14997C41D4895B031BF89F65377301A6BD9157A26D080DB1FB9508"
 }
