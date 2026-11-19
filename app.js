@@ -7,12 +7,13 @@
   // hidden: true인 앱은 릴리스가 있어도 이 페이지에 보이지 않습니다(릴리스·태그는 그대로 둠).
   // 여기에 없는 새 앱도 태그 규칙만 지키면 태그 앞부분을 이름으로 해서 자동으로 나옵니다.
   // color는 앱 아이콘의 대표색(밝은 화면), dark는 어두운 화면에서 읽히도록 밝힌 같은 계열 색입니다.
+  // icon은 앱 이름 앞에 보이는 아이콘 그림(icons/ 폴더). 각 앱 저장소의 실제 앱 아이콘에서 가져옵니다.
   var APPS = [
-    { id: "altosmemo",       name: "altosMEMO",       color: "#A61237", dark: "#EE5F80",
+    { id: "altosmemo",       name: "altosMEMO",       icon: "icons/altosmemo.svg",     color: "#A61237", dark: "#EE5F80",
       desc: "Windows PC와 Android 기기에서 동기화되는 메모 앱입니다. PC와 폰 어디서 수정하든 실시간으로 동기화 됩니다. 메모 별로 비밀번호를 걸 수도 있고, 인터넷이 끊겨도 기기에 저장해 두었다가 연결되면 동기화됩니다. PC 버전은 설치가 필요 없으며, 메모를 바탕화면에 스티키 메모처럼 붙여놓을 수도 있습니다." },
-    { id: "altospdf",        name: "altosPDF",        color: "#C60080", dark: "#F45CBF",
+    { id: "altospdf",        name: "altosPDF",        icon: "icons/altospdf.svg",      color: "#C60080", dark: "#F45CBF",
       desc: "설치 없이 실행할 수 있는 파워풀한 PDF 문서 뷰어 & 편집기입니다. 기존 글자의 수정이나 새로운 글 추가가 가능합니다. 형광펜 기능이나 쪽 편집은 물론, 탐색기에서 오른 버튼 메뉴로 PDF 문서 병합, 이미지들을 PDF 문서로 만들 수도 있습니다. 어떤 광고도 없습니다." },
-    { id: "winsnaplayout",   name: "altosSNAP",   color: "#DE3163", dark: "#DE3163",
+    { id: "winsnaplayout",   name: "altosSNAP",   icon: "icons/winsnaplayout.svg", color: "#DE3163", dark: "#DE3163",
       desc: "모니터 안에 어지럽게 흩어진 앱 창들을 내가 원하는 모양대로 저장하고 바로 바꿀 수 있는 가벼운 Window용 유틸리티입니다. 설치도 필요 없고 광고도 없습니다. 모니터를 2대 이상 사용한다면 모니터 별로 저장합니다. 강력한 자동정렬 창 기능도 있고, 숫자키에 최대 9개의 상태를 저장할 수 있습니다." },
     { id: "altospdf-mobile", hidden: true }   // Play 스토어로 배포하므로 이 페이지에는 싣지 않음
   ];
@@ -105,7 +106,16 @@
       var info = APPS.filter(function (a) { return a.id === id; })[0] || { name: id, desc: "" };
       var it = latest[id];
       var card = el("section", "app");
-      var h = el("h2", null, info.name);
+      var h = el("h2");
+      if (info.icon) {
+        var icon = el("img", "app-icon");
+        icon.src = info.icon;
+        icon.alt = "";            // 이름이 바로 옆에 있으므로 화면 읽기 프로그램에는 읽히지 않게 함
+        icon.width = 40;
+        icon.height = 40;
+        h.appendChild(icon);
+      }
+      h.appendChild(document.createTextNode(info.name));
       if (info.color) h.style.setProperty("--app-color", info.color);
       if (info.dark) h.style.setProperty("--app-color-dark", info.dark);
       if (it) h.appendChild(el("span", "ver", "v" + it.v.join(".")));
