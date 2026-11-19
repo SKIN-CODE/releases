@@ -1,13 +1,13 @@
 {
-  "version": "0.1.2",
-  "notes": "탭을 끌어서 순서를 바꿀 수 있습니다. 좁은 창·세로·가로 한 줄 배치와 최소 창 크기 324×348, Paperlogy 글꼴, 잠긴 메모를 열었을 때 화면 캡처 차단.",
-  "pub_date": "2026-11-19T07:53:58Z",
+  "version": "0.1.3",
+  "notes": "설정에서 구글 계정을 연결할 수 있습니다. PC 카드 칸 수를 1칸부터 정할 수 있고, 편집 창을 끌어서 옮길 수 있습니다. 휴지통 자동 비우기는 서버 시각을 기준으로 합니다.",
+  "pub_date": "2026-11-19T09:08:39Z",
   "platforms": {
     "windows-x86_64": {
-      "url": "https://github.com/SKIN-CODE/releases/releases/download/altosmemo-v0.1.2/altosMEMO.exe",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRWGRVV1FBUnozWlhxbWVVR3JEaVA3RFRYOVBxdHlSV0NaZFlXSlhxYkdsaC9zUndxUjFubWFXUmhIaUlDZDRSb054SXZhTkhxdkJ1QU5LMVVmZThXVE5qQ3ovV3VQOVFZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MDc0MjY0CWZpbGU6YWx0b3NNRU1PLmV4ZQl2ZXJzaW9uOjAuMS4yCnNHdGZ0aHk0S2ZsVFkxTm8wZUZ6eGtWYmtNWGc5WWVYMy9ma0FiSEdGZjk4V2NIRnAzbUdERGFMbUxETFlrOFNZTk4raCs0blE1d3ZnUlphaVpGR0JnPT0K"
+      "url": "https://github.com/SKIN-CODE/releases/releases/download/altosmemo-v0.1.3/altosMEMO.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRWGRVV1FBUnozWmJVYVZ6YmREZEk2TnZFU1FEYzVrdEJxeEFjTG1ac3Q0c0tqcHNEQlhhWHVrNEtVK1pHVXFiNWpzcjU1MDJySG9KS1lxT09lQzA0SnYvUGlsSlFBZGcwPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MDc5MjU4CWZpbGU6YWx0b3NNRU1PLmV4ZQl2ZXJzaW9uOjAuMS4zCmMvU3Vpa0pUYWdxSE4xSVpGMWhrUDl0djVoaGtqTThWekpId0NqQ1AyYnR3Ym9tSzd0aTN2U09RYmJhRnVWeGY5TTdIWnpXOWpJa0d0cVZQc2syeEJBPT0K"
     }
   },
-  "size": 11364352,
-  "sha256": "81B81A4398EAAE23CB37A2788FDE8C60B492105854FEB840295CAA5CEA827778"
+  "size": 11363328,
+  "sha256": "497EF9EBD6C5A3905DDFA921CF2476904ED796F38D276BB14292ECCBC7B012C7"
 }
