@@ -1,13 +1,13 @@
 {
-  "version": "0.1.4",
-  "notes": "PC ì„¤ì • ã€Œíœ´ëŒ€í°ì— ì„¤ì¹˜ã€ ì¹¸ì— Android ì•±ì„ ë°›ëŠ” QR ì½”ë“œì™€ Google Play í…ŒìŠ¤íŠ¸ ì°¸ì—¬ ë§í¬ê°€ ìƒê²¼ìŠµë‹ˆë‹¤. ì´ë©”ì¼ê³¼ êµ¬ê¸€ ê³„ì •ì´ ëª¨ë‘ ì—°ê²°ëœ ê³„ì •ì€ ê³„ì • ì¹¸ì— ë‘ ë°©ë²•ìœ¼ë¡œ ë¡œê·¸ì¸í•  ìˆ˜ ìžˆë‹¤ê³  í‘œì‹œí•©ë‹ˆë‹¤.",
-  "pub_date": "2026-11-19T16:02:51Z",
+  "version": "0.1.5",
+  "notes": "¾ÛÀ» ²°´Ù ÄÑ°Å³ª ¾÷µ¥ÀÌÆ®ÇÑ µÚ¿¡µµ ¸ÞÀÎ Ã¢ÀÌ ¸¶Áö¸· À§Ä¡¡¤Å©±â·Î ´Ù½Ã ¶å´Ï´Ù. ´ÙÀ½ ¾÷µ¥ÀÌÆ®ºÎÅÍ´Â ´Ù½Ã ÄÑ±â Àü¿¡ ¸ÕÀú ¹¯½À´Ï´Ù. ÅÇÀ» ²ø¾î ¿Å±æ ¶§ ÅÇÀÌ ¸ØÃß´ø ¹®Á¦¸¦ °íÃÆ½À´Ï´Ù.",
+  "pub_date": "2026-11-20T05:14:04Z",
   "platforms": {
     "windows-x86_64": {
-      "url": "https://github.com/SKIN-CODE/releases/releases/download/altosmemo-v0.1.4/altosMEMO.exe",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRWGRVV1FBUnozWmJPWGhYL1lDbThZcFNVUVhCTEdlSVBjbTFKLy83c2hVYzhFOWk3UXNFa2tFYWFrbHJJbTJyVGVzNWNmSkFZcVpUbGFoQzFjcXlTbSt2cDNWZmlRTFFZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MTA0MTI1CWZpbGU6YWx0b3NNRU1PLmV4ZQl2ZXJzaW9uOjAuMS40Cmc0aElhRDdINFpJa3NFa2F1NVlHaU1BOW16TGo1Vm9jMldkUllTZ1dhZmJZaEdkWmN0dUYzSllUZGdvcXpOTkRCaVpSMXY4bjIwL0JIL2QzdFRWK0N3PT0K"
+      "url": "https://github.com/SKIN-CODE/releases/releases/download/altosmemo-v0.1.5/altosMEMO.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRWGRVV1FBUnozWll6MkI0UUZHZFdCcGhCKzNnUFI0SmxSNUVhYmhXRmQxcFQvN1RHNSttRW01VjR1MHBUSFltZk00QTI5eWZtcUdxdDB3SHRFdXpHbWNyUEFEVGtTWEF3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MTUxNTc0CWZpbGU6YWx0b3NNRU1PLmV4ZQl2ZXJzaW9uOjAuMS41CkdKQ1lRT3FtQlFjWW5nWDlqdm8wTXhqUzZmQVl3anU2RGhmdmtWVThvWXYzYnVTeS9wNE5ScmVEVCszU1NJb2RmRXNHZnVrd21YN1pjVmIrS3ZUb0JBPT0K"
     }
   },
-  "size": 11363328,
-  "sha256": "C106B58A8E14997C41D4895B031BF89F65377301A6BD9157A26D080DB1FB9508"
+  "size": 11381248,
+  "sha256": "1CB196AC5B13BE9BF9923A57202148C61CB7E22F517ADB10B439C332A57FC83C"
 }
