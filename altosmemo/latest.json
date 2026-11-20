@@ -1,13 +1,13 @@
 {
-  "version": "0.1.5",
-  "notes": "앱을 껐다 켜거나 업데이트한 뒤에도 메인 창이 마지막 위치·크기로 다시 뜹니다. 다음 업데이트부터는 다시 켜기 전에 먼저 묻습니다. 탭을 끌어 옮길 때 탭이 멈추던 문제를 고쳤습니다.",
-  "pub_date": "2026-11-20T05:14:04Z",
+  "version": "0.1.6",
+  "notes": "설정을 카테고리로 나누고 「화면」·「메모 정렬」을 이 PC에만 따로 둘 수 있게 했습니다. 메모 잠금 비밀번호를 더 안전한 방식으로 보관하니 모든 PC와 폰을 0.1.6으로 올려 주세요. 한국어 낱말이 줄 끝에서 끊기지 않게 고쳤습니다.",
+  "pub_date": "2026-11-20T16:18:22Z",
   "platforms": {
     "windows-x86_64": {
-      "url": "https://github.com/SKIN-CODE/releases/releases/download/altosmemo-v0.1.5/altosMEMO.exe",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRWGRVV1FBUnozWll6MkI0UUZHZFdCcGhCKzNnUFI0SmxSNUVhYmhXRmQxcFQvN1RHNSttRW01VjR1MHBUSFltZk00QTI5eWZtcUdxdDB3SHRFdXpHbWNyUEFEVGtTWEF3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MTUxNTc0CWZpbGU6YWx0b3NNRU1PLmV4ZQl2ZXJzaW9uOjAuMS41CkdKQ1lRT3FtQlFjWW5nWDlqdm8wTXhqUzZmQVl3anU2RGhmdmtWVThvWXYzYnVTeS9wNE5ScmVEVCszU1NJb2RmRXNHZnVrd21YN1pjVmIrS3ZUb0JBPT0K"
+      "url": "https://github.com/SKIN-CODE/releases/releases/download/altosmemo-v0.1.6/altosMEMO.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRWGRVV1FBUnozWmFBdFgxMDFjQU1YVjZOT0xnclFiVkNUZ29aMlM5TCt2UVJzZTEyK0Nna09VZXFvak1tOFZ6YUJVZFRaMjNISDBvSUhlUGkxNWJsSUVVRUJPUVBkcGdJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MTg3NDAzCWZpbGU6YWx0b3NNRU1PLmV4ZQl2ZXJzaW9uOjAuMS42ClRmYlQ0Mm9BdDYxTExCRmsvZVkyWGJkZWhLS1F6b2pCRUpRREt2RGtyTDdEMXBUb29JUExPWWd5b2hrS1FsQUN6aUVKZzRNN1krUjVIcGhQeXRxR0FnPT0K"
     }
   },
-  "size": 11381248,
-  "sha256": "1CB196AC5B13BE9BF9923A57202148C61CB7E22F517ADB10B439C332A57FC83C"
+  "size": 11410432,
+  "sha256": "5AD339FDF1D66D3E3005F1D7EC3BDE7BEF1D0577A71DBC6B34AC6535851CDE5A"
 }
