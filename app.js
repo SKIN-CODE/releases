@@ -9,7 +9,7 @@
   // color는 앱 아이콘의 대표색(밝은 화면), dark는 어두운 화면에서 읽히도록 밝힌 같은 계열 색입니다.
   // icon은 앱 이름 앞에 보이는 아이콘 그림(icons/ 폴더). 각 앱 저장소의 실제 앱 아이콘에서 가져옵니다.
   var APPS = [
-    { id: "altosmemo",       name: "altosMEMO",       icon: "icons/altosmemo.svg",     color: "#A61237", dark: "#EE5F80",
+    { id: "altosmemo",       name: "altosMEMO",       icon: "icons/altosmemo.svg?v=0.1.8",     color: "#A61237", dark: "#EE5F80",
       desc: "Windows PC와 Android 기기에서 동기화되는 메모 앱입니다. PC와 폰 어디서 수정하든 실시간으로 동기화 됩니다. 메모 별로 비밀번호를 걸 수도 있고, 인터넷이 끊겨도 기기에 저장해 두었다가 연결되면 동기화됩니다. PC 버전은 설치가 필요 없으며, 메모를 바탕화면에 스티키 메모처럼 붙여놓을 수도 있습니다." },
     { id: "altospdf",        name: "altosPDF",        icon: "icons/altospdf.svg",      color: "#C60080", dark: "#F45CBF",
       desc: "설치 없이 실행할 수 있는 파워풀한 PDF 문서 뷰어 & 편집기입니다. 기존 글자의 수정이나 새로운 글 추가가 가능합니다. 형광펜 기능이나 쪽 편집은 물론, 탐색기에서 오른 버튼 메뉴로 PDF 문서 병합, 이미지들을 PDF 문서로 만들 수도 있습니다. 어떤 광고도 없습니다." },
