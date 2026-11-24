@@ -1,9 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="110 110 420 420" role="img" aria-labelledby="title description">
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="105 105 430 430" role="img" aria-labelledby="title description">
   <title id="title">AltosMEMO</title>
   <desc id="description">A thick crimson outline pencil on a white square: three equal body stripes, a regular zigzag where the wood is sharpened, an eraser end and a filled lead tip.</desc>
   <!-- altosMEMO 앱 아이콘(2026-11-24 새 연필, 정본 버전 202). 다른 앱 아이콘처럼 그림 테두리에 맞춰 잘랐다 -->
   <rect id="background" width="640" height="640" fill="#fff"/>
-  <g transform="translate(284.1 355.9) rotate(-45) translate(-215.5 0)" fill="none" stroke="#A61237" stroke-width="26" stroke-linecap="round" stroke-linejoin="round">
+  <g transform="translate(284.1 355.9) rotate(-45) translate(-215.5 0)" fill="none" stroke="#A61237" stroke-width="36" stroke-linecap="round" stroke-linejoin="round">
     <path id="outline" d="M0 0 L125 -138 L391 -138 A40 40 0 0 1 431 -98 L431 98 A40 40 0 0 1 391 138 L125 138 Z"/>
     <path id="ferrule" d="M366 -138 L366 138"/>
     <path id="stripes" d="M125 -46 L366 -46 M125 46 L366 46"/>
