@@ -1,13 +1,13 @@
 {
-  "version": "0.1.7",
-  "notes": "앱 아이콘을 새 연필 그림으로 바꿨습니다. 설정 「PC마다 설정」에서 메모 제목·본문 글꼴을 이 PC에 설치된 글꼴로 고를 수 있습니다. 「유사어」를 「연결 단어」로 바꾸고, 편집 창 점 세 개 메뉴(고정·카테고리 이동·휴지통)를 연결했습니다.",
-  "pub_date": "2026-11-24T08:29:36Z",
+  "version": "0.1.8",
+  "notes": "새 연필 아이콘을 다듬었습니다(선 굵기·위치). 앱 화면 안의 아이콘이 작게 보이던 것을 고쳤습니다. 메모 제목·본문 글꼴 고르기, 「연결 단어」, 편집 창 점 세 개 메뉴가 들어 있습니다.",
+  "pub_date": "2026-11-24T09:02:50Z",
   "platforms": {
     "windows-x86_64": {
-      "url": "https://github.com/SKIN-CODE/releases/releases/download/altosmemo-v0.1.7/altosMEMO.exe",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRWGRVV1FBUnozWldJYWExOUJScTQvc0ZLbTBUMWRUZ1p6em9OVk9xT3JVbjZOVEJKNFpMZVdrYjZOQ05ZeEJEdmU4WTQ2QlVXSWRkQTJDWTl3ZTZ2bDYzaWhSblNzSlF3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NTA4OTM2CWZpbGU6YWx0b3NNRU1PLmV4ZQl2ZXJzaW9uOjAuMS43CklSRHg4SVBucnoyN1BCOCtubU5aZUJMRGNWSTd4eWN3UmI2bGVZbXJDeEg0VzNzbWlmUkpKV1k4Zk5LRXFOZWtXeDJxR1J3cGNlcUNjRDFSVWtnNEFnPT0K"
+      "url": "https://github.com/SKIN-CODE/releases/releases/download/altosmemo-v0.1.8/altosMEMO.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRWGRVV1FBUnozWmUrdHVMcTBOSVNPVmNpcTZLdHU2cThja0NoVW9RSWltSGRWUHArUktrUDcrWk1HUFdndGNSOW1WeDFlSm4yd3pZY2tpZ2ZRQjVNL1dZRFdQajdkUWdRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NTEwOTE4CWZpbGU6YWx0b3NNRU1PLmV4ZQl2ZXJzaW9uOjAuMS44CmY0Q1JiL3ZBNTJ6V1NZQkdPdG5PZUpNMDZRZWhvY3Fma1VEamF2a1VMTlZudDlqSWZXQ1dXTUpCeTRsQXNBUThHNCtiaW45Y0UrTXpmM3VKNi9IMENBPT0K"
     }
   },
   "size": 11406336,
-  "sha256": "351BD9DD9B69F15B8136F1EB82BBE713A457ABF05C3398A4F367CC57CE62E0D7"
+  "sha256": "A20464062CBC4DAC971F971D9E44425473A49FAB2521A294C1F573AECE8BDE3F"
 }
