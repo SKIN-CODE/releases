@@ -1,13 +1,13 @@
 {
-  "version": "0.1.6",
-  "notes": "설정을 카테고리로 나누고 「화면」·「메모 정렬」을 이 PC에만 따로 둘 수 있게 했습니다. 메모 잠금 비밀번호를 더 안전한 방식으로 보관하니 모든 PC와 폰을 0.1.6으로 올려 주세요. 한국어 낱말이 줄 끝에서 끊기지 않게 고쳤습니다.",
-  "pub_date": "2026-11-20T16:18:22Z",
+  "version": "0.1.7",
+  "notes": "앱 아이콘을 새 연필 그림으로 바꿨습니다. 설정 「PC마다 설정」에서 메모 제목·본문 글꼴을 이 PC에 설치된 글꼴로 고를 수 있습니다. 「유사어」를 「연결 단어」로 바꾸고, 편집 창 점 세 개 메뉴(고정·카테고리 이동·휴지통)를 연결했습니다.",
+  "pub_date": "2026-11-24T08:29:36Z",
   "platforms": {
     "windows-x86_64": {
-      "url": "https://github.com/SKIN-CODE/releases/releases/download/altosmemo-v0.1.6/altosMEMO.exe",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRWGRVV1FBUnozWmFBdFgxMDFjQU1YVjZOT0xnclFiVkNUZ29aMlM5TCt2UVJzZTEyK0Nna09VZXFvak1tOFZ6YUJVZFRaMjNISDBvSUhlUGkxNWJsSUVVRUJPUVBkcGdJPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1MTg3NDAzCWZpbGU6YWx0b3NNRU1PLmV4ZQl2ZXJzaW9uOjAuMS42ClRmYlQ0Mm9BdDYxTExCRmsvZVkyWGJkZWhLS1F6b2pCRUpRREt2RGtyTDdEMXBUb29JUExPWWd5b2hrS1FsQUN6aUVKZzRNN1krUjVIcGhQeXRxR0FnPT0K"
+      "url": "https://github.com/SKIN-CODE/releases/releases/download/altosmemo-v0.1.7/altosMEMO.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRWGRVV1FBUnozWldJYWExOUJScTQvc0ZLbTBUMWRUZ1p6em9OVk9xT3JVbjZOVEJKNFpMZVdrYjZOQ05ZeEJEdmU4WTQ2QlVXSWRkQTJDWTl3ZTZ2bDYzaWhSblNzSlF3PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NTA4OTM2CWZpbGU6YWx0b3NNRU1PLmV4ZQl2ZXJzaW9uOjAuMS43CklSRHg4SVBucnoyN1BCOCtubU5aZUJMRGNWSTd4eWN3UmI2bGVZbXJDeEg0VzNzbWlmUkpKV1k4Zk5LRXFOZWtXeDJxR1J3cGNlcUNjRDFSVWtnNEFnPT0K"
     }
   },
-  "size": 11410432,
-  "sha256": "5AD339FDF1D66D3E3005F1D7EC3BDE7BEF1D0577A71DBC6B34AC6535851CDE5A"
+  "size": 11406336,
+  "sha256": "351BD9DD9B69F15B8136F1EB82BBE713A457ABF05C3398A4F367CC57CE62E0D7"
 }
