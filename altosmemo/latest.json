@@ -1,13 +1,13 @@
 {
-  "version": "0.1.8",
-  "notes": "새 연필 아이콘을 다듬었습니다(선 굵기·위치). 앱 화면 안의 아이콘이 작게 보이던 것을 고쳤습니다. 메모 제목·본문 글꼴 고르기, 「연결 단어」, 편집 창 점 세 개 메뉴가 들어 있습니다.",
-  "pub_date": "2026-11-24T09:02:50Z",
+  "version": "0.1.9",
+  "notes": "회원 탈퇴(설정 → 계정)와 메모 내보내기(JSON 파일)가 들어갔습니다. 설정 「휴대폰에 설치」가 Google Play 비공개 테스트 주소로 바뀌었고, 앱 정보·업데이트 주소를 새 GitHub 이름(leealto)으로 바꿨습니다.",
+  "pub_date": "2026-11-25T06:49:12Z",
   "platforms": {
     "windows-x86_64": {
-      "url": "https://github.com/SKIN-CODE/releases/releases/download/altosmemo-v0.1.8/altosMEMO.exe",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRWGRVV1FBUnozWmUrdHVMcTBOSVNPVmNpcTZLdHU2cThja0NoVW9RSWltSGRWUHArUktrUDcrWk1HUFdndGNSOW1WeDFlSm4yd3pZY2tpZ2ZRQjVNL1dZRFdQajdkUWdRPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NTEwOTE4CWZpbGU6YWx0b3NNRU1PLmV4ZQl2ZXJzaW9uOjAuMS44CmY0Q1JiL3ZBNTJ6V1NZQkdPdG5PZUpNMDZRZWhvY3Fma1VEamF2a1VMTlZudDlqSWZXQ1dXTUpCeTRsQXNBUThHNCtiaW45Y0UrTXpmM3VKNi9IMENBPT0K"
+      "url": "https://github.com/SKIN-CODE/releases/releases/download/altosmemo-v0.1.9/altosMEMO.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRWGRVV1FBUnozWmZVSVltMStPdWdDRGNncTNxdEY1OGhTK3dzTHk4Q2M3MDRFVDFOOHY5NjM2WHRvSGNRbkFoRmVXWWc3QXAxemJiUVg5VkJPMFNaNW9KOStRTmVzb0FZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NTg5MDkzCWZpbGU6YWx0b3NNRU1PLmV4ZQl2ZXJzaW9uOjAuMS45CkhXQVNGSm9jYmRUUzlKNWREcHlzY3Jlc01yOWpKTk9jemJiR05hNjBsZHJGTGpYdHM4QzFOWldIeUVKV1RmWGt1ZGtFQXZRREx3TWtVOXlTVVhKNkJ3PT0K"
     }
   },
-  "size": 11406336,
-  "sha256": "A20464062CBC4DAC971F971D9E44425473A49FAB2521A294C1F573AECE8BDE3F"
+  "size": 11431936,
+  "sha256": "FF8473AA62F658A1B568873FBD162B88AC5BBCCF3EDC055FE8AB145E39370F3F"
 }
