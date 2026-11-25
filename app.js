@@ -18,7 +18,7 @@
     { id: "altospdf-mobile", hidden: true }   // Play 스토어로 배포하므로 이 페이지에는 싣지 않음
   ];
 
-  var REPO = "SKIN-CODE/releases";
+  var REPO = "leealto/releases";
   // 보안: 다운로드 단추는 이 저장소의 릴리스 파일 주소일 때만 만듭니다(다른 주소로 가는 링크는 무시).
   var DL_PREFIX = "https://github.com/" + REPO + "/releases/download/";
   var TAG_RE = /^(.+)-v(\d+)\.(\d+)\.(\d+)$/;  // 앱이름-vX.Y.Z (예비판 꼬리표가 붙은 태그는 제외)
