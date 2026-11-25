@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>altosMEMO 개인정보처리방침 / Privacy Policy</title>
+<style>
+  :root { --text: #1d1d1f; --muted: #5f6368; --line: #dadce0; --bg: #ffffff; }
+  @media (prefers-color-scheme: dark) { :root { --text: #e8eaed; --muted: #9aa0a6; --line: #3c4043; --bg: #202124; } }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.65 system-ui, -apple-system, "Segoe UI", "Noto Sans KR", sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 1.6rem; margin: 0 0 4px; }
+  h2 { font-size: 1.15rem; margin: 28px 0 8px; }
+  p, li { margin: 6px 0; }
+  a { color: inherit; }
+  .meta { color: var(--muted); margin-bottom: 24px; }
+  hr { border: 0; border-top: 1px solid var(--line); margin: 48px 0; }
+</style>
+</head>
+<body>
+<main>
+<section lang="ko">
+  <h1>altosMEMO 개인정보처리방침</h1>
+  <p class="meta">시행일: 2026년 11월 25일 · 대상 앱: altosMEMO (Windows, Android 패키지 com.leealto.altosmemo)</p>
+
+  <h2>1. 수집하는 정보</h2>
+  <p>altosMEMO는 PC와 휴대폰에서 같은 메모를 쓰도록 동기화하는 메모앱입니다. 이를 위해 다음 정보를 저장합니다.</p>
+  <ul>
+    <li>계정 정보: 로그인에 쓰는 이메일 주소와 계정 식별 번호. 구글 계정으로 로그인하면 구글이 알려 주는 이메일 주소·이름·프로필 사진 주소가 함께 저장될 수 있습니다. 비밀번호는 Google Firebase Authentication이 관리하며 altosMEMO는 비밀번호를 받아 보관하지 않습니다.</li>
+    <li>사용자가 쓴 내용: 메모의 제목과 본문, 연결 단어, 탭, 휴지통에 넣은 메모(30일 보관), 메모마다 최근 20개의 이전 버전.</li>
+    <li>앱 설정: 화면 언어·테마·글꼴·정렬 같은 설정과 PC 스티키 메모 창의 위치.</li>
+    <li>잠금 정보: 앱 비밀번호와 메모 잠금 비밀번호는 저장하지 않습니다. 비밀번호가 맞는지 확인하는 값과, 비밀번호로 감싼 암호화 키만 저장합니다.</li>
+  </ul>
+  <p>광고, 원격 분석, 오류 보고 기능은 없습니다. 위치·연락처·사진 같은 기기 정보를 읽지 않습니다.</p>
+
+  <h2>2. 이용 목적</h2>
+  <p>저장한 정보는 로그인, 여러 기기 사이의 메모 동기화, 사용자가 고른 설정을 보여 주는 데에만 씁니다. 다른 목적으로 쓰거나 팔지 않습니다.</p>
+
+  <h2>3. 저장 위치와 처리 위탁</h2>
+  <ul>
+    <li>메모와 설정은 Google Cloud Firestore(서울 리전)에 저장됩니다. 로그인은 Google Firebase Authentication이 처리합니다. 이 처리에는 <a href="https://firebase.google.com/support/privacy">Firebase 개인정보 보호 안내</a>와 <a href="https://policies.google.com/privacy">Google 개인정보처리방침</a>이 적용됩니다.</li>
+    <li>데이터는 전송 중 암호화(HTTPS)되며, 다른 사용자는 내 데이터를 읽거나 쓸 수 없도록 서버 규칙으로 막습니다.</li>
+    <li>잠긴 메모의 본문은 기기 안에서 암호화한 뒤 저장합니다. 메모 잠금 비밀번호를 모르는 사람은 개발자를 포함해 누구도 본문을 볼 수 없습니다. 잠긴 메모의 제목과 연결 단어는 암호화하지 않습니다.</li>
+    <li>사고에 대비해 서버 데이터를 매일 백업하며, 백업은 98일 동안 보관한 뒤 자동으로 지워집니다.</li>
+    <li>PC 앱은 새 판이 있는지 확인하려고 GitHub(leealto.github.io, github.com)에 접속합니다. 이때 메모나 계정 정보는 보내지 않습니다. Android 앱의 설치와 업데이트는 Google Play가 맡습니다.</li>
+  </ul>
+  <p>위 경우 말고는 정보를 제3자에게 제공하지 않습니다.</p>
+
+  <h2>4. 기기 안에만 두는 정보</h2>
+  <ul>
+    <li>빠르게 열고 인터넷이 끊겨도 쓸 수 있도록 메모 사본을 기기 안에 보관합니다. 로그아웃하면 지워집니다.</li>
+    <li>「이 PC만 적용」·「이 폰만 적용」으로 고른 설정은 그 기기에만 저장합니다.</li>
+    <li>Android에서 「폰 화면 잠금으로 잠긴 메모 열기」를 켜면, 메모 암호화 키를 Android Keystore로 감싼 값을 그 폰 안에만 저장합니다. 서버로 보내지 않습니다.</li>
+    <li>Android 앱은 기기 백업과 기기 이전에서 앱 데이터를 빼도록 설정되어 있습니다.</li>
+  </ul>
+
+  <h2>5. 권한</h2>
+  <p>Android 앱은 인터넷 권한만 씁니다(동기화). 「보내기」와 「메모 내보내기」는 사용자가 누를 때만 Android 공유 창이나 저장 창으로 진행되며, 받을 앱이나 저장 위치는 사용자가 고릅니다.</p>
+
+  <h2>6. 보관 기간과 계정 삭제</h2>
+  <p>정보는 사용자가 지우거나 계정을 삭제할 때까지 보관합니다. 앱의 <b>설정 → 계정 → 회원 탈퇴</b>에서 계정과 모든 메모(잠긴 메모, 휴지통, 버전 기록, 탭, 설정 포함)를 바로 지울 수 있습니다. 앱을 쓸 수 없으면 아래 문의 주소로 요청할 수 있습니다. 자세한 방법은 <a href="delete-account.html">계정 삭제 안내</a>에 있습니다. 지운 데이터는 매일 백업에서 최대 98일 뒤에 완전히 사라집니다.</p>
+
+  <h2>7. 아동</h2>
+  <p>altosMEMO는 아동을 대상으로 하지 않습니다.</p>
+
+  <h2>8. 변경</h2>
+  <p>이 방침이 바뀌면 이 페이지에 새 시행일과 함께 게시합니다.</p>
+
+  <h2>9. 문의</h2>
+  <p>leealto · devalto9@gmail.com</p>
+</section>
+
+<hr>
+
+<section lang="en">
+  <h1>altosMEMO Privacy Policy</h1>
+  <p class="meta">Effective: November 25, 2026 · App: altosMEMO (Windows, Android package com.leealto.altosmemo)</p>
+
+  <h2>1. Information we collect</h2>
+  <p>altosMEMO is a notes app that keeps the same notes in sync between your PC and phone. To do this it stores:</p>
+  <ul>
+    <li>Account information: the email address you sign in with and an account ID. If you sign in with Google, the email address, name and profile photo URL provided by Google may also be stored. Passwords are handled by Google Firebase Authentication; altosMEMO never receives or keeps your account password.</li>
+    <li>Your content: note titles and bodies, linked words, tabs, notes in the trash (kept for 30 days), and the last 20 earlier versions of each note.</li>
+    <li>App settings: language, theme, fonts, sorting and similar settings, and the positions of PC sticky-note windows.</li>
+    <li>Lock information: the app password and note-lock password are never stored. Only a value used to check the password and an encryption key wrapped with the password are stored.</li>
+  </ul>
+  <p>There are no ads, analytics or crash reporting. The app does not read device information such as location, contacts or photos.</p>
+
+  <h2>2. How we use it</h2>
+  <p>This information is used only to sign you in, sync your notes between devices and apply the settings you choose. It is not used for anything else and is never sold.</p>
+
+  <h2>3. Where it is stored and who processes it</h2>
+  <ul>
+    <li>Notes and settings are stored in Google Cloud Firestore (Seoul region). Sign-in is handled by Google Firebase Authentication, under the <a href="https://firebase.google.com/support/privacy">Firebase privacy information</a> and the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</li>
+    <li>Data is encrypted in transit (HTTPS), and server rules prevent anyone else from reading or writing your data.</li>
+    <li>The body of a locked note is encrypted on your device before it is stored. Without the note-lock password nobody, including the developer, can read it. Titles and linked words of locked notes are not encrypted.</li>
+    <li>Server data is backed up daily for recovery; backups are kept for 98 days and then deleted automatically.</li>
+    <li>The PC app contacts GitHub (leealto.github.io, github.com) to check for new versions. No notes or account information are sent. Installation and updates of the Android app are handled by Google Play.</li>
+  </ul>
+  <p>Apart from the above, no information is shared with third parties.</p>
+
+  <h2>4. Information kept only on your device</h2>
+  <ul>
+    <li>A copy of your notes is kept on the device so the app opens quickly and works offline. It is removed when you sign out.</li>
+    <li>Settings set with “This PC only” or “This phone only” are stored only on that device.</li>
+    <li>On Android, if you turn on opening locked notes with the phone's screen lock, the note encryption key is wrapped with Android Keystore and stored only on that phone. It is never sent to the server.</li>
+    <li>The Android app excludes its data from device backup and device transfer.</li>
+  </ul>
+
+  <h2>5. Permissions</h2>
+  <p>The Android app uses only the internet permission (for sync). “Share” and “Export notes” happen only when you tap them, through Android's share or save screens, and you choose the receiving app or save location.</p>
+
+  <h2>6. Retention and account deletion</h2>
+  <p>Information is kept until you delete it or delete your account. In the app, <b>Settings → Account → Delete account</b> immediately deletes your account and all notes (including locked notes, trash, version history, tabs and settings). If you cannot use the app, you can request deletion at the contact address below. See <a href="delete-account.html">How to delete your account</a> for details. Deleted data disappears completely from the daily backups within 98 days.</p>
+
+  <h2>7. Children</h2>
+  <p>altosMEMO is not directed at children.</p>
+
+  <h2>8. Changes</h2>
+  <p>If this policy changes, the new version will be posted on this page with a new effective date.</p>
+
+  <h2>9. Contact</h2>
+  <p>leealto · devalto9@gmail.com</p>
+</section>
+</main>
+</body>
+</html>
