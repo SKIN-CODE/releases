@@ -1,13 +1,13 @@
 {
-  "version": "0.1.9",
-  "notes": "회원 탈퇴(설정 → 계정)와 메모 내보내기(JSON 파일)가 들어갔습니다. 설정 「휴대폰에 설치」가 Google Play 비공개 테스트 주소로 바뀌었고, 앱 정보·업데이트 주소를 새 GitHub 이름(leealto)으로 바꿨습니다.",
-  "pub_date": "2026-11-25T06:49:12Z",
+  "version": "0.2.0",
+  "notes": "설정을 펼치는 칸으로 바꾸고(모든 기기·이 PC만 꼬리표), 계정 비밀번호 바꾸기, 본문 제목(# ## ###), 도움말 칸을 넣었습니다. 메모 제목이 본문의 1.4배로 커졌고, 메모 내보내기 파일 이름이 바뀌었습니다.",
+  "pub_date": "2026-11-26T06:39:32Z",
   "platforms": {
     "windows-x86_64": {
-      "url": "https://github.com/SKIN-CODE/releases/releases/download/altosmemo-v0.1.9/altosMEMO.exe",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRWGRVV1FBUnozWmZVSVltMStPdWdDRGNncTNxdEY1OGhTK3dzTHk4Q2M3MDRFVDFOOHY5NjM2WHRvSGNRbkFoRmVXWWc3QXAxemJiUVg5VkJPMFNaNW9KOStRTmVzb0FZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NTg5MDkzCWZpbGU6YWx0b3NNRU1PLmV4ZQl2ZXJzaW9uOjAuMS45CkhXQVNGSm9jYmRUUzlKNWREcHlzY3Jlc01yOWpKTk9jemJiR05hNjBsZHJGTGpYdHM4QzFOWldIeUVKV1RmWGt1ZGtFQXZRREx3TWtVOXlTVVhKNkJ3PT0K"
+      "url": "https://github.com/SKIN-CODE/releases/releases/download/altosmemo-v0.2.0/altosMEMO.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRWGRVV1FBUnozWllSbmtJcVF2a1hYUHQ3akhWVk1FNHdvMHZJdlB2UXB4aXBZQ3Fsdk1yZXEzN2Y1TzlHRUJROGl4WmdTa2ZlaW9DY0J4NFNPRjB6ZmxaN2NMSDZYL2c4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1Njc1MDQ4CWZpbGU6YWx0b3NNRU1PLmV4ZQl2ZXJzaW9uOjAuMi4wCkFYV0gxNzB6UTFQUm1YNCtqY2x3aUZHaTIraXVQQ3IvSVhqMWdQekxSUEFxelM1VTdNQWIyRHkwSXgvTVYxbkh3cWl2TG81T0tPMFFIUU5oYTJsaEJnPT0K"
     }
   },
-  "size": 11431936,
-  "sha256": "FF8473AA62F658A1B568873FBD162B88AC5BBCCF3EDC055FE8AB145E39370F3F"
+  "size": 11436032,
+  "sha256": "C05B3FCD962F14BE701313409FBDD7E3BFCC3ADA5353CEBF72352F21473396D9"
 }
