@@ -1,13 +1,13 @@
 {
-  "version": "0.2.0",
-  "notes": "설정을 펼치는 칸으로 바꾸고(모든 기기·이 PC만 꼬리표), 계정 비밀번호 바꾸기, 본문 제목(# ## ###), 도움말 칸을 넣었습니다. 메모 제목이 본문의 1.4배로 커졌고, 메모 내보내기 파일 이름이 바뀌었습니다.",
-  "pub_date": "2026-11-26T06:39:32Z",
+  "version": "0.2.1",
+  "notes": "노션에서 메모 가져오기, 새 입력 서식(체크리스트·구분선·고정폭 글자)을 넣었고 탭을 30개까지 만들 수 있습니다. 새 서식을 쓴 메모는 0.2.0 이하 판에서 빈 메모로 보이니 모든 PC와 폰을 0.2.1로 올려 주세요.",
+  "pub_date": "2026-11-26T08:57:38Z",
   "platforms": {
     "windows-x86_64": {
-      "url": "https://github.com/SKIN-CODE/releases/releases/download/altosmemo-v0.2.0/altosMEMO.exe",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRWGRVV1FBUnozWllSbmtJcVF2a1hYUHQ3akhWVk1FNHdvMHZJdlB2UXB4aXBZQ3Fsdk1yZXEzN2Y1TzlHRUJROGl4WmdTa2ZlaW9DY0J4NFNPRjB6ZmxaN2NMSDZYL2c4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1Njc1MDQ4CWZpbGU6YWx0b3NNRU1PLmV4ZQl2ZXJzaW9uOjAuMi4wCkFYV0gxNzB6UTFQUm1YNCtqY2x3aUZHaTIraXVQQ3IvSVhqMWdQekxSUEFxelM1VTdNQWIyRHkwSXgvTVYxbkh3cWl2TG81T0tPMFFIUU5oYTJsaEJnPT0K"
+      "url": "https://github.com/SKIN-CODE/releases/releases/download/altosmemo-v0.2.1/altosMEMO.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRWGRVV1FBUnozWlpUbEU0N0RVRndWb0xqdGlyWnUvS3dWYUkvYUJxMnhDeG9CNmJRR0VzOUZQeXhQRWpUMEpObVhpNWJwcXlTWDBjdGxlWS9nN1BVZEpxZEJwQ3BTdlFFPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NjgzMzc0CWZpbGU6YWx0b3NNRU1PLmV4ZQl2ZXJzaW9uOjAuMi4xCkVmMTB3S1NIc0xTbTcvdGtYR2lDcXFOeHZDTHVPUHN2cFIrdmMyTkNOMGlnOUV2cHZRbzBhYTBseStKbjZPbWQyWWI4aGowbDdNd2VtWitsRzZFWEN3PT0K"
     }
   },
-  "size": 11436032,
-  "sha256": "C05B3FCD962F14BE701313409FBDD7E3BFCC3ADA5353CEBF72352F21473396D9"
+  "size": 11452416,
+  "sha256": "C7495CBD7249C3A5AB9019B770E42E516D1EA3FB10FA685F53B7D9487810D26D"
 }
