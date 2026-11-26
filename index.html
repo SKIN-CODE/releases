@@ -97,6 +97,9 @@
     .status { color: var(--muted); }
   .status a { color: var(--accent); }
   h2.section { font-size: 1.2rem; margin: 40px 0 8px; }
+  /* 요구사항 보내기: 얇고 흐린 둥근 테두리로 묶는다(바탕은 비움) */
+  .fb-section { margin: 40px 0 0; padding: 20px 22px 22px; border: 1px solid var(--line); border-radius: 12px; }
+  .fb-section h2.section { margin-top: 0; }
   .contact a, .note a { color: var(--accent); }
   .note { color: var(--muted); margin: 0 0 16px; font-size: 0.95rem; }
   form .field { margin-bottom: 14px; }
@@ -161,6 +164,7 @@
   <h2 class="section">연락처</h2>
   <p class="contact"><a href="mailto:devalto9@gmail.com">devalto9@gmail.com</a></p>
 
+  <section class="fb-section">
   <h2 class="section">요구사항 보내기</h2>
   <p class="note">고칠 점이나 바라는 기능을 로그인 없이 익명으로 보낼 수 있습니다. 보낸 내용은 공개되지 않습니다.</p>
   <div id="fb-box">
@@ -186,6 +190,7 @@
       <p class="status" id="fb-result" role="status"></p>
     </form>
   </div>
+  </section>
 </main>
 <script src="app.js"></script>
 </body>
