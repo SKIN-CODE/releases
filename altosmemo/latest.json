@@ -1,13 +1,13 @@
 {
-  "version": "0.3.0",
-  "notes": "설정에 「가져오기/내보내기」 칸이 생기고, Google Keep·글 파일(.txt·.md) 가져오기와 글 파일로 내보내기를 넣었습니다. 노션 가져오기가 멈추던 문제를 고쳤고, 앱을 켤 때 바뀐 메모만 받아 더 빨리 열립니다.",
-  "pub_date": "2026-11-27T06:52:01Z",
+  "version": "0.3.1",
+  "notes": "altosMEMO 백업(.json) 되살리기를 넣었습니다(잠긴 메모는 잠긴 채로, 예전 비밀번호로 열림). Google 로그인 단추를 공식 모양으로 바꾸고, 목록의 들여쓴 첫 줄 간격을 고쳤습니다.",
+  "pub_date": "2026-11-27T10:23:43Z",
   "platforms": {
     "windows-x86_64": {
-      "url": "https://github.com/SKIN-CODE/releases/releases/download/altosmemo-v0.3.0/altosMEMO.exe",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRWGRVV1FBUnozWlY0cnR3dXZYcGxCdFNidGg2bi83RjBoTXBSZUE3cUphN1U1eGllNFNPa2pUbHdxaTRsK1VRUE5NUG1BNEwvMFJpQ21QckIydzZ0OGFybGI5QXVPM3dvPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1NzYyMjM4CWZpbGU6YWx0b3NNRU1PLmV4ZQl2ZXJzaW9uOjAuMy4wCkJ6WTloVCthSWVIb0lzV2dnRDArdHV2WmVYenY0MjhZa1BpNDlSMDZRb1dPMnBNTGRqWjdqTnk2cWlMNjJnc1dGYnVoNnZHTSs1alF1bzY4Z1hHeEFBPT0K"
+      "url": "https://github.com/SKIN-CODE/releases/releases/download/altosmemo-v0.3.1/altosMEMO.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRWGRVV1FBUnozWmJRQW9RVS8rYVFmaFdGRmlEQmJpa3ZmbUJZNUVwSHNXeU53QWJVWElqL3FyVjI1K21aR21PRG5NM1dqK0lRMmFGZnZFTWVsNXFrN1g1eXBtamoyYWdrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1Nzc0OTQ0CWZpbGU6YWx0b3NNRU1PLmV4ZQl2ZXJzaW9uOjAuMy4xCk9mL0JyWjAxTmFlOXhGcnoraDE4c3dNN3kxRzZudkF6dzZHLy9BZkFveVA2MTZ5WHo3ekpIVHhjREN4Z29xZFNiUkhJaGhtWXdrUmtzVi9OczA4ckNnPT0K"
     }
   },
-  "size": 11470336,
-  "sha256": "8F115B3470C9D9387DDF18C131000CA1BF18DBC3F0AC4B7A58BF1E9AAD0BEC9D"
+  "size": 11474432,
+  "sha256": "881C0A7F200BA79B384ED635CB532579F0F819628C9269638464F3A897BBAC1F"
 }
