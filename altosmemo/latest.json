@@ -1,13 +1,13 @@
 {
-  "version": "0.3.1",
-  "notes": "altosMEMO 백업(.json) 되살리기를 넣었습니다(잠긴 메모는 잠긴 채로, 예전 비밀번호로 열림). Google 로그인 단추를 공식 모양으로 바꾸고, 목록의 들여쓴 첫 줄 간격을 고쳤습니다.",
-  "pub_date": "2026-11-27T10:23:43Z",
+  "version": "0.3.2",
+  "notes": "이메일로 새로 가입하면 인증 메일을 보내고, 메일의 링크를 누르면 메모를 쓸 수 있게 했습니다. 이미 쓰던 계정과 Google 로그인 계정은 그대로 씁니다.",
+  "pub_date": "2026-11-27T16:31:17Z",
   "platforms": {
     "windows-x86_64": {
-      "url": "https://github.com/SKIN-CODE/releases/releases/download/altosmemo-v0.3.1/altosMEMO.exe",
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRWGRVV1FBUnozWmJRQW9RVS8rYVFmaFdGRmlEQmJpa3ZmbUJZNUVwSHNXeU53QWJVWElqL3FyVjI1K21aR21PRG5NM1dqK0lRMmFGZnZFTWVsNXFrN1g1eXBtamoyYWdrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1Nzc0OTQ0CWZpbGU6YWx0b3NNRU1PLmV4ZQl2ZXJzaW9uOjAuMy4xCk9mL0JyWjAxTmFlOXhGcnoraDE4c3dNN3kxRzZudkF6dzZHLy9BZkFveVA2MTZ5WHo3ekpIVHhjREN4Z29xZFNiUkhJaGhtWXdrUmtzVi9OczA4ckNnPT0K"
+      "url": "https://github.com/SKIN-CODE/releases/releases/download/altosmemo-v0.3.2/altosMEMO.exe",
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVRWGRVV1FBUnozWmVkWTAxZVFhYXdINlNDYTF4WFM4aU1sWmxKbGxNd0RjQ0dScFlYeWlxRm5Pa1ZoWFMxMTRzTnRieXNyS1JnNXRCbFV6S20wUnpybEFoZTdreDYxOGdrPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzk1Nzk2MjM0CWZpbGU6YWx0b3NNRU1PLmV4ZQl2ZXJzaW9uOjAuMy4yClFQeXNRSU5XTUQrT1NvNCs1azR1OUJQS3FpaUNrelQzTWQxd0dSdmxCcWY4cS8ycHpQR1dWaU0wQk5EUWlRdEtENUx2eHFsRnA2dllOMWtxWUhMUkRRPT0K"
     }
   },
-  "size": 11474432,
-  "sha256": "881C0A7F200BA79B384ED635CB532579F0F819628C9269638464F3A897BBAC1F"
+  "size": 11478528,
+  "sha256": "E7AF68C2C1FDACDAE452DF87091E4D433FD88F63EDE94FB79C40F739E72E9765"
 }
